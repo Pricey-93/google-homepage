@@ -1,8 +1,14 @@
-body {
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
+body {
+    height: 100vmin;
+    width: 100%;
+}
 .page-container {
-    height: 98vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,33 +17,21 @@ body {
 /* Nav */
 .nav-container {
     width: 100%;
-    display: flex;
-}
-li {
-    display: inline-block;
-}
-li > a {
-    text-decoration: none;
-}
-.left-links {
-    margin-right: auto;
-}
-.right-links {
-    margin-left: auto;
 }
 
 /* Main Content */
 
 .main-content {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.google-logo {
-    height: 92px;
-    width: 272px;
-}
 form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
 }
 form > input[type="search"] {
@@ -50,20 +44,8 @@ form > input[type="search"] {
     border-radius: 50px;
 }
 .search-icon {
-    height: 24px;
-    width: 24px;
     position: absolute;
-    top: 65px;
-    left: 12px;  
 }
-.search-button {
-    text-align: center;
-}
-form > a {
-    text-align: center;
-    display: block;
-}
-
 /* Footer */
 footer {
     width: 100%;
